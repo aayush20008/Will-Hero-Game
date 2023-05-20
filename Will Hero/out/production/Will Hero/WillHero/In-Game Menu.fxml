@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newGamePane" prefHeight="653.0" prefWidth="1337.0" style="-fx-background-image: url('Assets/inGameMenu.jpg');" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutX="357.0" layoutY="98.0" prefHeight="487.0" prefWidth="650.0" style="-fx-background-color: #fffdd0; -fx-background-radius: 30; -fx-border-radius: 30;">
+            <children>
+            <Label fx:id="currentScore" layoutX="101.0" layoutY="163.0" prefHeight="54.0" prefWidth="193.0" text="Current Score: 0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="highScore" layoutX="102.0" layoutY="217.0" prefHeight="45.0" prefWidth="177.0" text="High Score: 0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="restart" layoutX="62.0" layoutY="379.0" mnemonicParsing="false" onAction="#restart" prefHeight="36.0" prefWidth="117.0" style="-fx-background-radius: 15px; -fx-background-color: #FD5616; -fx-blend-mode: hard-light;" text="Restart">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="resume" layoutX="213.0" layoutY="291.0" mnemonicParsing="false" onAction="#resume" prefHeight="45.0" prefWidth="139.0" style="-fx-background-radius: 30px; -fx-background-color: #32F70A; -fx-blend-mode: hard-light;" text="Resume" textFill="#f0eded">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="Home" layoutX="381.0" layoutY="379.0" mnemonicParsing="false" onAction="#back2Home" prefHeight="36.0" prefWidth="117.0" style="-fx-background-radius: 15px; -fx-background-color: #EC4F37; -fx-blend-mode: hard-light;" text="Home">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <ImageView fx:id="gamePause" fitHeight="120.0" fitWidth="328.0" layoutX="191.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/game-paused.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="68.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/Coin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="70.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/Coin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="40.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/Coin.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="226.0" layoutY="379.0" mnemonicParsing="false" onAction="#saveGame" prefHeight="36.0" prefWidth="117.0" style="-fx-background-radius: 15px;" text="Save" />
+            <Button layoutX="550.0" layoutY="249.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-graphic: url('Assets/musicicon.png'); -fx-background-radius: 30em; -fx-blend-mode: hard-light;" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

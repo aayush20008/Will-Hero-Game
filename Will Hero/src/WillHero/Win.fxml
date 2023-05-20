@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newGamePane" prefHeight="653.0" prefWidth="1337.0" style="-fx-background-image: url('Assets/inGameMenu.jpg');" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutX="332.0" layoutY="51.0" prefHeight="528.0" prefWidth="686.0" style="-fx-background-color: #fffdd0; -fx-background-radius: 30; -fx-border-radius: 30;">
+            <children>
+                <Button fx:id="Home" layoutX="284.0" layoutY="426.0" mnemonicParsing="false" onAction="#back2Home" prefHeight="45.0" prefWidth="139.0" style="-fx-background-radius: 30px; -fx-background-color: #32F70A; -fx-blend-mode: hard-light;" text="HOME" textFill="#f0eded">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Button>
+                <ImageView fx:id="gamePause" fitHeight="361.0" fitWidth="290.0" layoutX="209.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Assets/winnerposter.png" />
+                    </image>
+                </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="360.0" prefHeight="31.0" prefWidth="396.0" text="CONGRATULATIONS !!! YOU HAVE WON THE GAME. ">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

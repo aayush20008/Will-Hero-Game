@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newGamePane" prefHeight="653.0" prefWidth="1337.0" style="-fx-background-image: url('Assets/inGameMenu.jpg');" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutX="357.0" layoutY="98.0" prefHeight="487.0" prefWidth="650.0" style="-fx-background-color: #fffdd0; -fx-background-radius: 30; -fx-border-radius: 30;">
+            <children>
+                <Label fx:id="currentScore" layoutX="101.0" layoutY="163.0" prefHeight="54.0" prefWidth="193.0" text="Current Score: 0">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="highScore" layoutX="102.0" layoutY="217.0" prefHeight="45.0" prefWidth="177.0" text="High Score: 0">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Button fx:id="resume" layoutX="136.0" layoutY="374.0" mnemonicParsing="false" onAction="#resurrect" prefHeight="45.0" prefWidth="139.0" style="-fx-background-radius: 30px; -fx-background-color: #32F70A; -fx-blend-mode: hard-light;" text="YES" textFill="#f0eded">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Button>
+                <Button fx:id="Home" layoutX="344.0" layoutY="373.0" mnemonicParsing="false" onAction="#back2Home" prefHeight="46.0" prefWidth="139.0" style="-fx-background-radius: 30px; -fx-background-color: #EC4F37; -fx-blend-mode: hard-light;" text="NO" textFill="#ece7e7">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Button>
+                <ImageView fx:id="gamePause" fitHeight="179.0" fitWidth="292.0" layoutX="168.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Assets/gameover1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="68.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Assets/Coin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="70.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Assets/Coin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="40.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Assets/Coin.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="550.0" layoutY="249.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-graphic: url('Assets/musicicon.png'); -fx-background-radius: 30em; -fx-blend-mode: hard-light;" />
+            <Label graphicTextGap="6.0" layoutX="109.0" layoutY="308.0" text="WOULD YOU LIKE TO CONTINUE THE GAME FOR">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="436.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/Coin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="462.0" layoutY="308.0" text="10 COINS ?">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="WelcomePane" prefHeight="653.0" prefWidth="1337.0" style="-fx-background-image: url('Assets/WelcomeScreen.jpeg');" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WillHero.Game">
+   <children>
+      <Button fx:id="newGame" alignment="BOTTOM_LEFT" layoutX="860.0" layoutY="126.0" mnemonicParsing="false" onAction="#newGame" style="-fx-blend-mode: hard-light;" text="New Game">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="loadGame" layoutX="859.0" layoutY="193.0" mnemonicParsing="false" onAction="#loadGame" style="-fx-blend-mode: hard-light;" text="Load Game">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="viewHighScore" layoutX="840.0" layoutY="264.0" mnemonicParsing="false" style="-fx-blend-mode: multiply; -fx-background-color: #ffffb3;" text="View HighScore">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="exitGame" layoutX="891.0" layoutY="333.0" mnemonicParsing="false" onAction="#exitScreen" style="-fx-blend-mode: hard-light; -fx-background-color: #ff6666;" text="Exit">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

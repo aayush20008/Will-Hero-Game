@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="staticFrame" prefHeight="653.0" prefWidth="1238.0" style="-fx-background-color: &quot;skyblue&quot;;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="cloud0" fitHeight="150.0" fitWidth="200.0" layoutX="33.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/cloud1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="movingPlatform" layoutX="9.0" layoutY="402.0" prefHeight="169.0" prefWidth="704.0" />
+      <ImageView fx:id="cloud1" fitHeight="150.0" fitWidth="200.0" layoutX="145.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/cloud2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud2" fitHeight="150.0" fitWidth="200.0" layoutX="356.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/cloud1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud3" fitHeight="150.0" fitWidth="200.0" layoutX="441.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/cloud1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud4" fitHeight="150.0" fitWidth="200.0" layoutX="530.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/cloud2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud5" fitHeight="150.0" fitWidth="200.0" layoutX="738.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/cloud1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cloud6" fitHeight="150.0" fitWidth="200.0" layoutX="838.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/cloud2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pauseButton" layoutX="1174.0" layoutY="5.0" mnemonicParsing="false" onAction="#pause" style="-fx-graphic: url('Assets/pauseButton.png'); -fx-blend-mode: hard-light; -fx-min-width: 50px; -fx-min-height: 50px; -fx-background-radius: 5em;" />
+      <Label fx:id="steps" alignment="CENTER" contentDisplay="CENTER" layoutX="560.0" layoutY="127.0" prefHeight="38.0" prefWidth="61.0" text="00">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
